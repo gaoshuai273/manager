@@ -21,6 +21,7 @@ public class UserController {
     @RequestMapping("/addUser")
     public String addUser(Users users){
         userService.addUser(users);
+        System.out.println("添加Users成功！");
         return "ok";
     }
 }
